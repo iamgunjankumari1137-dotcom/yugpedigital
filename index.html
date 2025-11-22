@@ -1231,7 +1231,7 @@
         <div class="hero-text">
          <h1>Next-Generation Digital Payments</h1>
          <p>Smart cashback platform for modern India. Recharge, pay bills, earn rewards, and grow your business with YUGPE.</p>
-         <div class="cta-buttons"><a href="https://app.yugpe.com/home" class="btn-primary">Get Started</a> <a href="https://app.yugpe.com/home" class="btn-secondary">Learn More</a>
+         <div class="cta-buttons"><a href="https://app.yugpe.com/home" class="btn-primary">Get Started</a> <a href="https://app.yugpe.com/login" class="btn-secondary">Learn More</a>
          </div>
         </div>
         <div class="hero-visual">
@@ -1260,7 +1260,7 @@
         <div class="hero-text">
          <h1>Earn Upto 8% Cashback Instantly</h1>
          <p>Every recharge, every bill payment earns you instant cashback. No waiting, no conditions. Just pure rewards!</p>
-         <div class="cta-buttons"><button class="btn-primary">Start Earning</button> <button class="btn-secondary">View Benefits</button>
+         <div class="cta-buttons"><a href="https://app.yugpe.com/home" class="btn-primary">Start Earning</button> <a href="https://app.yugpe.com/login" class="btn-secondary">View Benefits</a>
          </div>
         </div>
         <div class="hero-visual">
@@ -1293,7 +1293,7 @@
         <div class="hero-text">
          <h1>Grow Your Business Today</h1>
          <p>YUGPE helps you grow your business with smart digital tools and seamless payments — giving you faster, smarter, and more reliable growth.</p>
-         <div class="cta-buttons"><button class="btn-primary">Become Partner</button> <button class="btn-secondary">Explore Products</button>
+         <div class="cta-buttons"><a href="https://app.yugpe.com/home" class="btn-primary">Become Partner</a> <a href="https://app.yugpe.com/login" class="btn-secondary">Explore Products</button>
          </div>
         </div>
         <div class="hero-visual">
@@ -2157,20 +2157,38 @@
             modal.innerHTML = `
                 <div style="background:#1a1a1a;border:2px solid #ff6b00;border-radius:20px;padding:2rem;max-width:800px;width:100%;max-height:90%;overflow:auto;">
                     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;">
-                        <h2 style="color:#ffffff;margin:0;">YUGPE Business Plan 2025</h2>
+                        <h2 style="color:#ffffff;margin:0;">⭐ Benefits of the YUGPE Business Plan </h2>
                         <button onclick="this.parentElement.parentElement.parentElement.remove()" style="background:none;border:none;color:#ff6b00;font-size:2rem;cursor:pointer;padding:0;width:40px;height:40px;">×</button>
                     </div>
                     <div style="color:#b0b0b0;line-height:1.8;">
-                        <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">Executive Summary</h3>
-                        <p>YUGPE is revolutionizing India's digital payment ecosystem with innovative solutions that combine convenience, security, and maximum rewards.</p>
+                        <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">Zero Investment, Unlimited Earning</h3>
+                        <p>Start your journey without any joining fees — earn through referrals, purchases, and team growth with no financial risk.</p>
                         
-                        <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">Market Opportunity</h3>
-                        <p>India's digital payments market is projected to reach $10 trillion by 2026, creating massive opportunities for platforms like YUGPE.</p>
+                        <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">Multiple Income Streams</h3>
+                        <p>Payments, shopping, referrals, cashback, and rewards — ek hi platform par alag-alag income sources.</p>
+                        
+                        <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">100% Transparent & Legally Compliant</h3>
+                        <p>Income, wallet, rewards, and performance tracking — sab kuch clear, real-time and policy based.</p>
+                        
+                        <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">Easy to Learn, Easy to Grow</h3>
+                        <p>System simple hai — step-by-step support, training videos, and mentorship har level par मिलता है.</p>
+                        
+                        <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">Earn While You Use</h3>
+                        <p>App ka daily use — recharge, bill payment, shopping — bhi earning opportunities deta hai.</p>
+                        
+                        <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">Lifetime Opportunity</h3>
+                        <p>Aap jitne log join karte ho, utna network, utna benefit — long-term passive income build karne ka mauka.</p>
+                        
+                        <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">Personal Development & Leadership</h3>
+                        <p>Communication skill, business mindset, digital awareness aur leadership qualities naturally develop hoti hain. </p>
+                        
+                        <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">Team & Community Support</h3>
+                        <p>YUGPE ek family ki tarah काम karta hai — guidance, motivation aur growth training har waqt उपलब्ध.</p>
                         
                         <h3 style="color:#ff6b00;margin:1.5rem 0 1rem;">Revenue Streams</h3>
                         <ul style="margin-left:2rem;">
                             <li>Transaction fees and commissions</li>
-                            <li>Merchant partnership programs</li>
+                            <li>Referal Base unlimited income Program</li>
                             <li>Premium business solutions (Yugpe & AushadhiPro)</li>
                             <li>Value-added services and subscriptions</li>
                         </ul>
@@ -2185,28 +2203,66 @@
             document.body.appendChild(modal);
         }
 
-        function downloadPDF() {
-            const notification = document.createElement('div');
-            notification.style.cssText = 'position:fixed;top:2rem;right:2rem;background:linear-gradient(135deg,#ff6b00,#ff8c00);color:#fff;padding:1.5rem 2rem;border-radius:12px;box-shadow:0 10px 40px rgba(255,107,0,0.4);z-index:10000;animation:slideIn 0.5s ease;';
-            notification.innerHTML = '<strong>📄 Business Plan Downloaded!</strong><br><small>YUGPE_Business_Plan_2025.pdf</small>';
-            document.body.appendChild(notification);
-            
-            setTimeout(() => {
-                notification.style.animation = 'slideOut 0.5s ease';
-                setTimeout(() => notification.remove(), 500);
-            }, 3000);
+         function downloadPDF() {
+    const pdfPath = "yugpe plan pdf.pdf"; 
+
+    // Start the download
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = pdfPath.split('/').pop();
+    link.click();
+
+    // Notification Popup
+    const notification = document.createElement('div');
+    notification.style.cssText = 'position:fixed;top:2rem;right:2rem;background:linear-gradient(135deg,#ff6b00,#ff8c00);color:#fff;padding:1.5rem 2rem;border-radius:12px;box-shadow:0 10px 40px rgba(255,107,0,0.4);z-index:10000;animation:slideIn 0.5s ease;';
+    notification.innerHTML = '<strong>📄 Business Plan Downloaded!</strong><br><small>YUGPE_Business_Plan_2025.pdf</small>';
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.style.animation = 'slideOut 0.5s ease';
+        setTimeout(() => notification.remove(), 500);
+    }, 3000);
         }
 
         // App Download Functions
-        function downloadAndroidApp() {
-            const notification = document.createElement('div');
-            notification.style.cssText = 'position:fixed;bottom:2rem;right:2rem;background:linear-gradient(135deg,#ff6b00,#ff8c00);color:#fff;padding:1.5rem 2rem;border-radius:12px;box-shadow:0 10px 40px rgba(255,107,0,0.4);z-index:10000;max-width:300px;';
-            notification.innerHTML = '<strong>📱 Android App Ready!</strong><br><small>YUGPE_v2.5.0.apk downloading...</small>';
-            document.body.appendChild(notification);
-            
-            setTimeout(() => {
-                notification.remove();
-            }, 3000);
+function downloadAndroidApp() {
+    // APK file ka download start
+    const apkPath = "apk/YUGPE_v2.5.0.apk"; // 👉 yaha apna APK ka path set karo
+
+    const link = document.createElement("a");
+    link.href = apkPath;
+    link.download = "YUGPE_v2.5.0.apk";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Notification Show
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position:fixed;
+        bottom:2rem;
+        right:2rem;
+        background:linear-gradient(135deg,#ff6b00,#ff8c00);
+        color:#fff;
+        padding:1.5rem 2rem;
+        border-radius:12px;
+        box-shadow:0 10px 40px rgba(255,107,0,0.4);
+        z-index:10000;
+        max-width:310px;
+        animation:fadeIn 0.4s ease;
+    `;
+    notification.innerHTML = `
+        <strong>📱 Download Started!</strong><br>
+        <small>YUGPE Android App is downloading...</small>
+    `;
+    document.body.appendChild(notification);
+
+    setTimeout(() => {
+        notification.style.animation = "fadeOut 0.4s ease";
+        setTimeout(() => notification.remove(), 400);
+    }, 3000);
+}
+
         }
 
         function downloadIOSApp() {
